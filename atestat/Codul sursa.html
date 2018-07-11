@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	background-color: #FFFFFF;
+	background-image: url(bgcod.jpg);
+}
+body,td,th {
+	color: #FFFFFF;
+}
+</style>
+</head>
+
+<body>
+<p><img src="Codul-sursa.jpg" width="681" height="1383" align="right" /></p>
+<p>Arduino primește informații de la receptorul IR prin pinul 11. Pinii 8 și 4 trimit impulsul electric spre motoarele DC care invârtesc roțile, datorită faptului că prin pini nu iese mai mult de 3V este nevoie de tranzistori. Pinul 13 este folosit pentru a porni un LED.</p>
+<p>Void setup este o structură nerepetitivă in care sunt inițializate unule funcții precum Serial. Void loop este o structura repetitiva care se repetă la infinit.</p>
+<p>Deoarece void loop are o viteză  mai mare de 3 ori decât cea de transmitere a telecomenzii am memorat in variabilele x, y si k cu 1 și 0 dacă telecomanda a trimis semnal.</p>
+<p>Informațiile primite de la telecomada sunt numere de 8 cifre, dar ultima cifra este mereu 5 asa ca am eliminat-o. Variabila bec reține valori 1 sau 0 .</p>
+<p>Programul meu funcționează ca un meniu de forma ” apasați butonul x pentru a face asta” , așadar când este apăsat butonul ”sus” variabila ”a” devine 3, iar când ”a” devine 3 mașina merge înainte.</p>
+</body>
+</html>
